@@ -1,13 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import RootNavigator from './src/navigation/RootNavigator'
+
 
 export default function App() {
+  console.log("APP")
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <RootNavigator />
   );
 }
 
@@ -19,3 +19,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
